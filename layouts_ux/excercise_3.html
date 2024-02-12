@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment-3</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .header {
+    flex: 1;
+    background-color:royalblue; 
+    text-align: center;
+  }
+
+  .footer {
+    flex: 1;
+    background-color:blue; 
+    text-align: center;
+  }
+
+  .content {
+    flex: 8;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+  }
+  .col {
+    height: 100%;
+    box-sizing: border-box;
+  
+  }
+  .col-1-4 {
+    flex: 1;
+    background-color: #ffcccb; /* Light pink */
+  }
+  .col-1-2 {
+    flex: 2;
+    background-color: #add8e6; /* Light blue */
+  }
+  .col-1-4-last {
+    flex: 1;
+    background-color: #98fb98; /* Pale green */
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header"><h2>Header</h2></div>
+    <div class="content">
+      <div class="row">
+        <div class="col col-1-4"></div>
+        <div class="col col-1-2"></div>
+        <div class="col col-1-4-last"></div>
+      </div>
+    </div>
+    <div class="footer"><h2>Footer</h2></div>
+  </div>
+</body>
+</html>
